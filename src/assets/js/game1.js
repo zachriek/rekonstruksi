@@ -13,7 +13,7 @@ const doneSound = document.getElementById('done-sound');
 
 const words = [
   {
-    arab: 'رَأْسٌ',
+    arab: 'hidung',
     latin: 'hidung',
     answer: 'kepala',
   },

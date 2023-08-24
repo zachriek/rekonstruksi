@@ -1,0 +1,15 @@
+.arab-card,
+.latin-card {
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+
+.arab-card:hover,
+.latin-card:hover {
+  transform: scale(0.9);
+}
+
+.arab-card.card-active,
+.latin-card.card-active {
+  border: 5px solid var(--bs-primary);
+}

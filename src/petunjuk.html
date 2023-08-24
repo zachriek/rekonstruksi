@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+
+    <!-- CSS Main File -->
+    <link rel="stylesheet" href="./assets/scss/main.scss" />
+
+    <title>Belajar Bahasa Arab</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top" data-aos="fade-down">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/images/hero_2.png" alt="icon" width="50" />
+          Belajar Bahasa Arab
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./materi.html">Materi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./permainan.html">Permainan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./petunjuk.html">Petunjuk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./score.html">Skor</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- List Petunjuk Section -->
+    <section class="section" id="level">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2 class="heading" data-aos="fade-down">Petunjuk</h2>
+            <p class="text" data-aos="fade-down" data-aos-delay="300">Pilih petunjuk sesuai dengan tingkat kesulitan di bawah ini!</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-12 mb-4" data-aos="fade-down" data-aos-delay="600">
+            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#easyModal">
+              <div class="card game-card bg-secondary text-center">
+                <img src="./assets/images/benda.png" alt="benda" class="card-img-top" />
+                <div class="card-body">
+                  <i class="bi bi-info-circle-fill" style="font-size: 2rem"></i>
+                  <h5 class="card-title">Benda di sekitar</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-12 mb-4" data-aos="fade-down" data-aos-delay="900">
+            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#mediumModal">
+              <div class="card game-card bg-secondary text-center">
+                <img src="./assets/images/kata.png" alt="kata.png" class="card-img-top" />
+                <div class="card-body">
+                  <i class="bi bi-info-circle-fill" style="font-size: 2rem"></i>
+                  <h5 class="card-title">Mendengarkan dan menyamakan kata yang sama</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 col-12 mb-4" data-aos="fade-down" data-aos-delay="1200">
+            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#hardModal">
+              <div class="card game-card bg-secondary text-center">
+                <img src="./assets/images/kata2.png" alt="kata.png" class="card-img-top" />
+                <div class="card-body">
+                  <i class="bi bi-info-circle-fill" style="font-size: 2rem"></i>
+                  <h5 class="card-title">Mencocokkan gambar dengan kata</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Permainan Benda di sekitar -->
+    <div class="modal fade" id="easyModal" tabindex="-1" aria-labelledby="easyModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center" id="easyModalLabel" style="font-weight: 600">Petunjuk</h5>
+            <p class="text-center">Permainan Benda di sekitar</p>
+            <ul class="list-group">
+              <li class="list-group-item">1. Pilih gambar bahasa arab di sebelah kiri</li>
+              <li class="list-group-item">2. Kemudian pilih gambar benda di sebelah kanan</li>
+              <li class="list-group-item">3. Jika kedua gambar cocok maka akan muncul pesan "Jawaban Kamu Benar"</li>
+              <li class="list-group-item">4. Jika kedua gambar tidak cocok maka akan muncul pesan "Jawaban Kamu Kurang Tepat"</li>
+              <li class="list-group-item">5. Jika gambar bahasa arab dan gambar benda sudah habis, maka akan muncul pesan "Permainan Selesai"</li>
+              <li class="list-group-item">6. Kemudian, kamu akan diarahkan ke halaman skor untuk melihat hasil skor kamu</li>
+              <li class="list-group-item">7. Selamat Bermain! 😄</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Permainan Mendengarkan dan menyamakan kata yang sama -->
+    <div class="modal fade" id="mediumModal" tabindex="-1" aria-labelledby="mediumModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center" id="mediumModalLabel" style="font-weight: 600">Petunjuk</h5>
+            <p class="text-center">Permainan Mendengarkan dan menyamakan kata yang sama</p>
+            <ul class="list-group">
+              <li class="list-group-item">1. Pilih gambar soal untuk mendengarkan suara bahasa arab</li>
+              <li class="list-group-item">2. Pilih gambar bahasa arab untuk mencocokkan dengan suara</li>
+              <li class="list-group-item">3. Jika gambar dan suara cocok maka akan muncul pesan "Jawaban Kamu Benar"</li>
+              <li class="list-group-item">4. Jika gambar dan suara tidak cocok maka akan muncul pesan "Jawaban Kamu Kurang Tepat"</li>
+              <li class="list-group-item">5. Jika soal sudah habis, maka akan muncul pesan "Permainan Selesai"</li>
+              <li class="list-group-item">6. Kemudian, kamu akan diarahkan ke halaman skor untuk melihat hasil skor kamu</li>
+              <li class="list-group-item">7. Selamat Bermain! 😄</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Permainan Menceklis kata yang disebutkan -->
+    <div class="modal fade" id="hardModal" tabindex="-1" aria-labelledby="hardModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="modal-title text-center" id="hardModalLabel" style="font-weight: 600">Petunjuk</h5>
+            <p class="text-center">Permainan Mencocokkan gambar dengan kata</p>
+            <ul class="list-group">
+              <li class="list-group-item">1. Pilih gambar soal untuk mendengarkan suara</li>
+              <li class="list-group-item">2. Pilih gambar bahasa arab untuk mencocokkan dengan suara</li>
+              <li class="list-group-item">3. Jika gambar dan suara cocok maka akan muncul pesan "Jawaban Kamu Benar"</li>
+              <li class="list-group-item">4. Jika gambar dan suara tidak cocok maka akan muncul pesan "Jawaban Kamu Kurang Tepat"</li>
+              <li class="list-group-item">5. Jika soal sudah habis, maka akan muncul pesan "Permainan Selesai"</li>
+              <li class="list-group-item">6. Kemudian, kamu akan diarahkan ke halaman skor untuk melihat hasil skor kamu</li>
+              <li class="list-group-item">7. Selamat Bermain! 😄</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Musik -->
+    <audio autoplay loop id="music">
+      <source src="./assets/audio/music2.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- Suara Klik -->
+    <audio id="click-sound">
+      <source src="./assets/audio/click.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- JS Mainfile -->
+    <script type="module" src="./assets/js/main.js"></script>
+    <script>
+      const cardLinks = document.querySelectorAll('.card-link');
+      const clickSound = document.getElementById('click-sound');
+
+      cardLinks.forEach((card) => {
+        card.addEventListener('mousemove', () => {
+          clickSound.currentTime = 0;
+          clickSound.play();
+        });
+        card.addEventListener('mouseout', () => {
+          clickSound.currentTime = 0;
+          clickSound.pause();
+        });
+      });
+    </script>
+  </body>
+</html>

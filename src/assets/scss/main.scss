@@ -1,0 +1,130 @@
+/*********************
+-- Table of contents
+
+- Custom variables 
+- Bootstrap functions
+- Bootstrap variables
+- Bootstrap mixins
+- Custom map amends
+- Custom utilities
+- Bootstrap main import
+
+***********************
+*/
+
+
+// Import our variable overrides.
+// Go here to set custom values for Bootstrap vars
+@import "./abstracts/variables";
+
+// Import Bootstrap functions, vars and mixins
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Import our map amends
+// Go here to run any Sass map amends on Bootstrap Sass maps
+@import "./abstracts/map-amends";
+
+// Import our utility overrides
+// Go here to amend or set custom utilities using the Bootstrap API
+@import './utilities/bootstrap-api-utilities';
+
+// Bootstrap main import
+@import "~bootstrap/scss/bootstrap";
+
+// Bootstrap Icon
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// AOS
+@import '../../../node_modules/aos/dist/aos.css';
+
+// Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Uthmanic
+@font-face {
+  font-family: 'Uthmanic';
+  src: url("../fonts/uthmanic.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bs-primary);
+  border-radius: 5px;
+}
+
+body {
+  background: url("../images/background.jpg");
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.font-uthmanic {
+  font-family: 'Uthmanic', serif;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card {
+  transition: all .3s ease-in-out;
+}
+
+.card-link:hover .card {
+  transform: scale(0.95);
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+section#hero {
+  margin-top: 50px;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 768px) {
+  section#hero {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
+.game-card {
+  min-height: 400px;
+}
